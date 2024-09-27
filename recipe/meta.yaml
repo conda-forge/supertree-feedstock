@@ -1,5 +1,5 @@
 {% set name = "supertree" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7c9966c6e26f9695ca645efa64dd4beb674d863c3efbc2218072ce127c070763
+  sha256: 8e2deb8112c633c9119b5e3f2374cd0e4a01e963372da1ac3cddf693ea6a555e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation

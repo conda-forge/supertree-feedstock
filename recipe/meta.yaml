@@ -24,6 +24,7 @@ requirements:
     - pandas
     - IPython
     - ipywidgets
+    - setuptools
 
 test:
   imports:
